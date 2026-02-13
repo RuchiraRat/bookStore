@@ -10,4 +10,15 @@ public class BookController {
     public String home() {
         return "home";
     }
+
+    @GetMapping("/book_register")
+    public String bookRegister() {
+        // template file is named bookRegister.html (CamelCase), so return that name here
+        return "bookRegister";
+    }
+
+    @GetMapping("/available_books")
+    public String getAllBook() {
+        return "bookList";
+    }
 }
